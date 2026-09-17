@@ -4,7 +4,9 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="left-container">
-        <a href="mailto:Rmoreira711@gmail.com">Email: Rmoreira711@gmail.com</a>
+        <a href="mailto:raphaelmor711@gmail.com">
+          Email: raphaelmor711@gmail.com
+        </a>
         <a href="/raphael-resume.pdf" download>
           Download Resume
         </a>

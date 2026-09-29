@@ -1,7 +1,8 @@
 const projects = [
   {
     title: "Chirp",
-    description: "A full stack Twitter clone",
+    description:
+      "A Twitter/X clone with JWT auth, posts, likes, comments, and a follow system. Feeds load with zero N+1 queries thanks to a self-referential follow model.",
     tech: "React · Node.js · Express · PostgreSQL · Prisma",
     image:
       "https://res.cloudinary.com/zrc0epiv/image/upload/f_auto,q_auto,w_1600/v1790654112/chirp_qc7k0d.png",
@@ -11,7 +12,7 @@ const projects = [
   {
     title: "Messaging App",
     description:
-      "A full stack Discord-inspired messaging app with real-time conversations, friend requests, and user profiles.",
+      "Direct and group chat built on a many-to-many conversation model, with deduplication that guarantees no duplicate DM threads, plus friend requests and user profiles.",
     tech: "React · Node.js · Express · PostgreSQL · Prisma",
     image:
       "https://res.cloudinary.com/zrc0epiv/image/upload/f_auto,q_auto,w_1600/v1790654095/messaging-app_lrzmcc.png",
@@ -21,7 +22,7 @@ const projects = [
   {
     title: "Find It",
     description:
-      "A Where's Waldo inspired photo tagging game where users find hidden characters in images with a global leaderboard.",
+      "A server-authoritative, Where's Waldo inspired photo tagging game. Hit detection and timing run on the server, so leaderboard scores can't be forged from the browser.",
     tech: "React · Node.js · Express · PostgreSQL · Prisma",
     image:
       "https://res.cloudinary.com/zrc0epiv/image/upload/f_auto,q_auto,w_1600/v1790654103/find-it_bopb96.png",

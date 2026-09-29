@@ -1,10 +1,12 @@
-const aboutMe = `I studied Computer Engineering Technology at NJIT, 
-graduating with a 3.75 GPA and Dean's List recognition. 
-During my studies I discovered a passion for web development 
-and spent the last year going deep into full stack JavaScript, 
-building real applications with React, Node.js, Express, and 
-PostgreSQL. I'm currently looking for my first role as a front end, 
-back end, or full stack developer where I can keep growing and contribute to a 
-team building real products.`;
+const aboutMe = `I'm a software engineer who builds full stack web applications in
+React, Node.js, and PostgreSQL, from data model to deployed product.
+Before going independent, I spent two years as a WMS Support Specialist
+at Bergen Logistics, supporting a 3PL warehouse management system in
+production: writing SQL against live databases, automating reporting
+workflows in Python, and debugging failing API integrations down to the
+root cause. I studied Computer Technology at NJIT, graduating with a
+3.75 GPA and Dean's List recognition. I use AI tools like Claude Code to
+ship faster, while reviewing and testing every change. I'm open to
+front end, back end, and full stack roles.`;
 
 export default aboutMe;

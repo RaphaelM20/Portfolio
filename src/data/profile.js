@@ -1,7 +1,7 @@
 const profile = {
   name: "Raphael Moreira",
   tagline:
-    "Full stack JavaScript developer building with React, Node.js, Express, and PostgreSQL.",
+    "Software engineer building full stack web applications in React, Node.js, and PostgreSQL, from data model to deployed product.",
   location: "Newark, New Jersey",
   availability: "Open to front end, back end & full stack roles",
   email: "raphaelmor711@gmail.com",
@@ -21,12 +21,12 @@ const profile = {
       caption: "Ellie, my cat",
     },
   },
-  // Quick facts shown beside the About text, all drawn from aboutMe.js.
+  // Quick facts shown beside the About text, drawn from aboutMe.js and the resume.
   facts: [
-    { label: "Studied", value: "Computer Engineering Technology, NJIT" },
+    { label: "Experience", value: "2 years in production WMS support, Bergen Logistics" },
+    { label: "Education", value: "B.E.T. in Computer Technology, NJIT" },
     { label: "Honors", value: "3.75 GPA · Dean's List" },
-    { label: "Focus", value: "React, Node.js, Express, PostgreSQL" },
-    { label: "Based in", value: "Newark, New Jersey" },
+    { label: "Stack", value: "React, Node.js, Express, PostgreSQL, Prisma" },
   ],
   projectsIntro:
     "Full stack apps built with React, Node.js, Express, and PostgreSQL, plus a vanilla JavaScript game tested with Jest.",

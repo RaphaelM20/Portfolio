@@ -2,9 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+    <title>Raphael Moreira · Full Stack JavaScript Developer</title>
+    <meta
+      name="description"
+      content="Raphael Moreira is a full stack JavaScript developer in Newark, New Jersey, building with React, Node.js, Express, and PostgreSQL."
+    />
+    <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0b0c'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='ui-monospace,Menlo,monospace' font-size='13' font-weight='600' fill='%23ededee'%3ERM%3C/text%3E%3C/svg%3E"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://raphaelmoreira.netlify.app/" />
+    <meta property="og:title" content="Raphael Moreira · Full Stack JavaScript Developer" />
+    <meta
+      property="og:description"
+      content="Full stack JavaScript developer building with React, Node.js, Express, and PostgreSQL."
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/zrc0epiv/image/upload/v1788980204/headshot_cathwp.webp"
+    />
+    <meta property="og:image:alt" content="Portrait of Raphael Moreira" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap"
+    />
+
+    <!-- Apply a saved theme before first paint to avoid a flash of the wrong theme. -->
+    <script>
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "light" || theme === "dark") {
+          document.documentElement.dataset.theme = theme;
+        }
+      } catch (e) {
+        /* storage unavailable */
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

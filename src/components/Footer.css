@@ -1,0 +1,58 @@
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding-block: var(--space-8) var(--space-4);
+}
+
+.footer-top {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.footer-contact {
+  display: grid;
+  gap: var(--space-1-5);
+  justify-items: start;
+}
+
+.footer-email {
+  font-size: var(--step-2);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+  transition: text-decoration-color 150ms var(--ease);
+}
+
+.footer-email:hover {
+  text-decoration-color: currentColor;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1-5) var(--space-3);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-1);
+  margin-top: var(--space-8);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border);
+  color: var(--subtle);
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+}
+
+@media (min-width: 768px) {
+  .footer-top {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+  }
+}

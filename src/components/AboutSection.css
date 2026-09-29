@@ -1,0 +1,176 @@
+.about-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.about-header {
+  display: grid;
+  gap: var(--space-2);
+  align-content: start;
+}
+
+.about-content {
+  min-width: 0;
+}
+
+.about-intro {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.about-lede {
+  font-size: var(--step-1);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  max-width: 62ch;
+}
+
+.about-facts {
+  display: grid;
+  gap: var(--space-2) var(--space-3);
+  align-content: start;
+}
+
+.about-facts > div {
+  display: grid;
+  gap: var(--space-half);
+  padding-top: var(--space-1-5);
+  border-top: 1px solid var(--border);
+}
+
+.about-facts dt {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--subtle);
+}
+
+.about-facts dd {
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+.about-toggle {
+  margin-top: var(--space-5);
+}
+
+.about-toggle svg {
+  transition: transform 200ms var(--ease);
+}
+
+.about-toggle[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+.about-more {
+  display: grid;
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+}
+
+.about-more[hidden] {
+  display: none;
+}
+
+.about-more-row {
+  display: grid;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.about-photo {
+  max-width: 420px;
+}
+
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.about-photo figcaption {
+  margin-top: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--subtle);
+}
+
+.about-subtitle {
+  font-size: var(--step-2);
+  margin-bottom: var(--space-2);
+}
+
+.about-more-text {
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.fun-facts {
+  border-bottom: 1px solid var(--border);
+}
+
+.fun-facts li {
+  display: grid;
+  grid-template-columns: var(--space-5) minmax(0, 1fr);
+  gap: var(--space-1);
+  padding-block: var(--space-1-5);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.fun-fact-index {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--subtle);
+  padding-top: 2px;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .about-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .about-more-row {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: var(--space-6);
+  }
+
+  .about-more-row--reverse {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .about-grid {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: var(--space-6);
+  }
+
+  .about-header {
+    align-self: start;
+    position: sticky;
+    top: calc(var(--nav-h) + var(--space-4));
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-intro {
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: var(--space-6);
+  }
+}
+
+/* On the About page the title sits above the content, like other pages. */
+.about--page .about-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+
+.about--page .about-header {
+  position: static;
+  margin-bottom: clamp(var(--space-5), 6vw, var(--space-8));
+}

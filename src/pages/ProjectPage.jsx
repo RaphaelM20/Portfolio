@@ -1,21 +1,16 @@
-import ProjectCard from "../components/ProjectCard";
-import projects from "../data/projects";
+import ProjectList from "../components/ProjectList";
+import Reveal from "../components/Reveal";
+import profile from "../data/profile";
 
 function ProjectPage() {
   return (
-    <div className="projects-page-container">
-      <h1>Projects</h1>
-      {projects.map((project) => (
-        <ProjectCard
-          key={project.title}
-          title={project.title}
-          description={project.description}
-          tech={project.tech}
-          image={project.image}
-          liveLink={project.liveLink}
-          githubLink={project.githubLink}
-        />
-      ))}
+    <div className="container page">
+      <Reveal as="header" className="page-header">
+        <p className="eyebrow">Work</p>
+        <h1 className="page-title">Projects</h1>
+        {profile.projectsIntro && <p className="page-lede">{profile.projectsIntro}</p>}
+      </Reveal>
+      <ProjectList layout="list" headingLevel={2} />
     </div>
   );
 }

@@ -29,7 +29,7 @@ const profile = {
     { label: "Stack", value: "React, Node.js, Express, PostgreSQL, Prisma" },
   ],
   projectsIntro:
-    "Full stack apps built with React, Node.js, Express, and PostgreSQL, plus a vanilla JavaScript game tested with Jest.",
+    "Full stack apps built with React, Node.js, Express, and PostgreSQL, a multiplayer 3D game in TypeScript and Three.js, and a vanilla JavaScript game tested with Jest.",
 };
 
 export default profile;

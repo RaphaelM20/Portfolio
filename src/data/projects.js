@@ -1,5 +1,15 @@
 const projects = [
   {
+    title: "Car Soccer",
+    description:
+      "A browser car-soccer game with a custom deterministic physics simulation on a fixed 120 Hz timestep and online 1v1 multiplayer with client-side prediction over a WebSocket relay.",
+    tech: "TypeScript · Three.js · React · WebSockets · Vitest",
+    image:
+      "https://raw.githubusercontent.com/RaphaelM20/car-soccer/main/screenshots/ingame.png",
+    liveLink: "https://car-soccer.netlify.app/",
+    githubLink: "https://github.com/RaphaelM20/car-soccer",
+  },
+  {
     title: "Chirp",
     description:
       "A Twitter/X clone with JWT auth, posts, likes, comments, and a follow system. Feeds load with zero N+1 queries thanks to a self-referential follow model.",

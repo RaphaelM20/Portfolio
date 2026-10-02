@@ -39,10 +39,12 @@ function ProjectCard({
           ))}
         </ul>
         <div className="project-links">
-          <a className="text-link" href={liveLink} target="_blank" rel="noreferrer">
-            Live site<span className="sr-only"> for {title} (opens in a new tab)</span>
-            <FiArrowUpRight aria-hidden="true" />
-          </a>
+          {liveLink && (
+            <a className="text-link" href={liveLink} target="_blank" rel="noreferrer">
+              Live site<span className="sr-only"> for {title} (opens in a new tab)</span>
+              <FiArrowUpRight aria-hidden="true" />
+            </a>
+          )}
           <a className="text-link" href={githubLink} target="_blank" rel="noreferrer">
             <FiGithub aria-hidden="true" />
             Source<span className="sr-only"> code for {title} (opens in a new tab)</span>
